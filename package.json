@@ -1,0 +1,26 @@
+{
+  "name": "recurring-monthly-expenses",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Ionut Carst",
+  "description": "GraphQL Application  to keep your reccuring monthly expenses",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server.js",
+    "server:dev": "nodemon server.js",
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IonutC/recurring-monthly-expenses.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IonutC/recurring-monthly-expenses/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.11.7"
+  }
+}
