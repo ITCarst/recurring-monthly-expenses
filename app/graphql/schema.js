@@ -2,7 +2,8 @@ const {
   GraphQLObjectType,
   GraphQLSchema,
   GraphQLList,
-  GraphQLString
+  GraphQLString,
+  GraphQLNonNull
 } = require('graphql');
 
 const ExpensesMock = require('../../persistence/expenses.js');
@@ -12,13 +13,20 @@ const ExpensesQueryRootType  = new GraphQLObjectType({
     name: "ExpensesAppSchema",
     description: "Expenses Application Query Root",
     fields: {
+        expense: {
+            type: new GraphQLList(ExpenseType),
+            args: {
+                id: { type: new GraphQLNonNull(GraphQLString) }
+            },
+            description: "Single expense item",
+            resolve: (root, args) => {
+                return ExpensesMock.filter(expense => expense.id === args.id);
+            }
+        },
         expenses: {
             type: new GraphQLList(ExpenseType),
-            description: "List of monthly expenses",
-            resolve: (root, source, fieldASTs) => {
-                console.log(root, source, fieldASTs, ExpensesMock)
-                return ExpensesMock
-            }
+            description: "A list of monthly expenses",
+            resolve: () => {return ExpensesMock}
         }
     }
 });

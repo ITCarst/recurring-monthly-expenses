@@ -1,7 +1,7 @@
 const Expenses = [
   {
     id: '8dlx7ak38fd39dv79ad', 
-    name: 'Mortgage',
+    name: 'asdasdas',
     ammount: 100,
 	  occuring: 22
   },
