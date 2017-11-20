@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "stable"
+env:
+  global:
+    - HOST=127.0.0.1:8081
+    - NAME=recurring-monthly-expenses
+cache:
+  yarn: true
+  directories:
+  - ~/docker
+  - "$HOME/.yarn-cache"
+  - "node_modules"
+services:
+  - docker
+before_install:
+  - yarn --version
+script:
+  - yarn test
