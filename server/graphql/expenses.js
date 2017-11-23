@@ -26,7 +26,6 @@ const ExpenseType = new GraphQLObjectType({
             type: new GraphQLNonNull(GraphQLInt),
             description: 'Payment due date.',
         }
-        
     })
 });
 

@@ -1,6 +1,6 @@
 'use strict';
 
-const app = require('./app');
+const app = require('./server/index.js');
 const config = require('./config/config');
 
 app.listen(config.port, () => {

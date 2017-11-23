@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }))
 	.use(bodyParser.json({ limit: '10mb' }))
 	.use((err, req, res, next) => res.status(500).send(err.message))
-	.get('/', (req, res) => res.sendFile(path.join(__dirname, '../client/index.html')))
+	.get('/', (req, res) => res.sendFile(path.join(__dirname, '../src/index.html')))
 	.use('/expenses', graphqlHTTP({
 		schema: ExpensesAppSchema,
     	graphiql: true

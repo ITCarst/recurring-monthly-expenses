@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+  db:
+    build: ./persistance
+    image: mysql:latest
+    container_name: mysql
+
+  recurring-expenses:
+    build: .
+    container_name: recurring-expenses
+    image: ic/recurring-expenses:latest
+    ports:
+      - "8000:8000"
+    links:
+      - db:db
+    depends_on:
+     - db
+    environment:
+      - MYSQL_HOST=db
+    env_file: ./env/env_dev.env

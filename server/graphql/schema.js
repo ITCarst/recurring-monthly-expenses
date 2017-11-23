@@ -6,7 +6,7 @@ const {
   GraphQLNonNull
 } = require('graphql');
 
-const ExpensesMock = require('../../persistence/expenses.js');
+const ExpensesMock = require('../persistence/expenses.js');
 const ExpenseType = require('./expenses');
 
 const ExpensesQueryRootType  = new GraphQLObjectType({
@@ -34,4 +34,3 @@ const ExpensesQueryRootType  = new GraphQLObjectType({
 exports.ExpensesAppSchema = new GraphQLSchema({
     query: ExpensesQueryRootType
 });
-
