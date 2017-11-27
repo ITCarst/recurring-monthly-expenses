@@ -22,10 +22,10 @@
         "styles.css"
       ],
       "scripts": [],
-      "environmentSource": "environments/environment.ts",
+      "environmentSource": "../config/env/environment.ts",
       "environments": {
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
+        "dev": "../config/env/environment.ts",
+        "prod": "../config/env/environment.prod.ts"
       }
     }
   ],

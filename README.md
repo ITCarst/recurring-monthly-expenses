@@ -8,10 +8,33 @@ There are a couple of files which you need to fill like:
  - that's it
 
 
+
+## How it works
+
+Add your monthly income:
+  - set a date when your income will arrive. E.g. 24th of each month 
+  - an ammount e.g. 3000 USD.
+
+Add your recurring expenses:
+- Provide an expense name
+- Add your expenses one by one (one time operation), fill in some form fileds:
+  - ammount, 
+  - date when the expense will take place,
+  - select a currency (USD, EUR etc.)
+  - end date if for instance it's only 1 or 2 months payment (leaving it blank automatically becomes a monthly recurring expenditure)
+
+If you have one time payment like going our for an restaurant make sure to not make it recurring. It will expire on the the first of the next month.
+You will have an overview on how much you spent and allowed to spend from your maximum ammount.
+
+Is there a need to categoriesed your expenses? Please ask if so.
+
+
 ## Backend Application
 - `expressjs`
 - `graphql`
-- `mysql`
+- `mysql` || `sqlite3` - still haven't decided over network capabilities (do you want that???!!!)
+    - I can imagine people want to sink there data over multiple devices but....I havent' decied
+    - there are the posibilites and I will create a feature toggle 
 - `Docker`
 - `docker-compose` - to start also the mysql container
 - more to be defined either AWS Lambda, cloud sync etc. because it's work in progress the ops are still to be defined
@@ -48,3 +71,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+

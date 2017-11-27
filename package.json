@@ -6,9 +6,9 @@
   "description": "GraphQL Application  to keep your reccuring monthly expenses",
   "main": "index.js",
   "scripts": {
-    "cleans" : "rm -rf dist",
+    "cleans": "rm -rf dist",
     "server": "yarn cleans & yarn build & node server.js",
-    "server:dev": "yarn cleans & yarn build & nodemon server.js",
+    "server:dev": "yarn cleans & yarn build & nodemon server.js & yarn start",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -24,11 +24,6 @@
     "url": "https://github.com/IonutC/recurring-monthly-expenses/issues"
   },
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "express-graphql": "^0.6.11",
-    "graphql": "^0.11.7",
-    "mysql": "^2.15.0",
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
@@ -38,8 +33,14 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
+    "body-parser": "^1.18.2",
     "core-js": "^2.4.1",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.11.7",
+    "mysql": "^2.15.0",
     "rxjs": "^5.5.2",
+    "sqlite3": "^3.1.13",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {

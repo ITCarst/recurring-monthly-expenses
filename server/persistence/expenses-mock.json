@@ -1,0 +1,31 @@
+[
+  {
+    "id": "8dlx7ak38fd39dv79ad",
+    "name": "asdasdas",
+    "ammount": 100,
+    "currency": "EUR",
+    "notes": "Dinner with bla",
+	  "occuring": 22,
+    "startDate": "29-01-2018",
+    "endDate": "29-01-2018"
+  },
+  {
+    "id": "jd3kd03d0w9a0l35rh74",
+    "name": "Mata",
+    "ammount": 200,
+    "currency": "EUR",
+    "notes": "Dinner with bla",
+	  "occuring": 25,
+    "startDate": "29-01-2018",
+    "endDate": "29-01-2018"
+  },
+  {
+    "id": "0hy894hf0dlkfh9oinv",
+    "name": "other one",
+    "ammount": 800,
+    "currency": "USD",
+    "notes": "Dinner with bla",
+	  "startDate": "29-01-2018",
+    "endDate": "29-01-2018"
+  }
+]

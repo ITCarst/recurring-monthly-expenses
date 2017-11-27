@@ -2,31 +2,31 @@ let {
   GraphQLString,
   GraphQLInt,
   GraphQLObjectType,
+  GraphQLID,
   GraphQLNonNull
 } = require('graphql');
 
 
-const ExpenseType = new GraphQLObjectType({
+exports.ExpenseType = new GraphQLObjectType({
     name: "expense",
     description: "This represents an expense item",
     fields: () => ({
         id: {
-            type: new GraphQLNonNull(GraphQLString),
+            type: new GraphQLNonNull(GraphQLID),
             description: 'The id of the expense.',
         },
-        name: { 
+        name: {
             type: new GraphQLNonNull(GraphQLString),
             description: 'The name of the expense.',
         },
-        ammount: { 
+        ammount: {
             type: new GraphQLNonNull(GraphQLInt),
             description: 'The ammount of the expense.',
         },
-        occuring: { 
-            type: new GraphQLNonNull(GraphQLInt),
+        occuring: {
+            type: new GraphQLNonNull(GraphQLString),
             description: 'Payment due date.',
         }
     })
 });
 
-module.exports = ExpenseType;
