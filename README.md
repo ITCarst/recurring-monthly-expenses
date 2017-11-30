@@ -33,8 +33,7 @@ Is there a need to categoriesed your expenses? Please ask if so.
 - `expressjs`
 - `graphql`
 - `mysql` || `sqlite3` - still haven't decided over network capabilities (do you want that???!!!)
-    - I can imagine people want to sink there data over multiple devices but....I havent' decied
-    - there are the posibilites and I will create a feature toggle 
+    - I can imagine people want to sink there data over multiple devices but....I havent' decied    
 - `Docker`
 - `docker-compose` - to start also the mysql container
 - more to be defined either AWS Lambda, cloud sync etc. because it's work in progress the ops are still to be defined
@@ -50,7 +49,7 @@ Is there a need to categoriesed your expenses? Please ask if so.
     
 
 
-## Client Application - using angular 5 and generated with angular-cli
+## Client Application - using angular 5+ and generated with angular-cli
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.3.
 
 ### Development server
