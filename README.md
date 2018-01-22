@@ -1,5 +1,8 @@
 # Monthly recurring expenses
 
+[![Build Status](https://travis-ci.org/IonutC/recurring-monthly-expenses.svg?branch=master)](https://travis-ci.org/IonutC/recurring-monthly-expenses)
+
+
 Allocate a recurring expense on a monthly basis. 
 Add your total income from which your expenses are going to be deducted. 
 There are a couple of files which you need to fill like:
